@@ -3,10 +3,11 @@ html {
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   color: #fff;
-  padding-top: 10px;
   margin: 0;
+  padding: 0;
   line-height: 20px;
 }
 
@@ -14,29 +15,37 @@ header {
   padding: 200px;
   background-image: url("static-images/starry-sky.jpg");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
 }
 
 h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 60px;
+  font-size: 90px;
   opacity: 0.95;
   margin-bottom: 40px;
 }
 
 p {
-  font-family: Verdana, sans-serif;
+  text-align: center;
   font-size: 14px;
   opacity: 0.7;
 }
 
 .header-intro {
-  padding-right: 570px;
   line-height: 20px;
+  font-size: 20px;
 }
 
 .phone-icons {
   display: flex;
+}
+
+.phone-icons a{
+  text-decoration: none;
 }
 
 .phone-icon {
@@ -52,8 +61,9 @@ p {
   border-radius: 50%;
 }
 
-.phone-icon: hover{
+.phone-icon:hover {
   background-color: #4448BA;
+  opacity: 0.9;
 }
 
 .second-section {
@@ -61,7 +71,7 @@ p {
   justify-content: center;
   align-items: center;
   background-color: white;
-  padding: 20px 80px;
+  padding: 30px 80px;
 }
 
 .icon-title-text {
@@ -73,6 +83,10 @@ p {
   margin: 10px 30px;
 }
 
+.icon-title-text a{
+  text-decoration: none;
+}
+
 .other-icons {
   display: flex;
   align-items: center;
@@ -81,10 +95,17 @@ p {
 
 .other-icon {
   background-color: #4448BA;
+  border: 1px solid white;
   color: white;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.other-icon:hover {
+  background-color: white;
+  color: #4448BA;
+  border: 1px solid #4448BA;
 }
 
 .itt-header {
@@ -101,23 +122,34 @@ p {
 
 .third-section {
   display: flex;
+  justify-content: center;
   background-color: #E2DFDE;
   color: #595858;
-  padding: 40px 160px;
+  padding: 50px 160px;
 }
 
 .third-leftside {
   flex-direction: column;
-  /*padding-right: 250px;*/
+  width: 600px;
 }
 
-iframe {
-  width: 560px;
+.third-header {
+  padding: 0;
+  margin: 0;
+}
+
+.third-text {
+  text-align: left;
+  padding-right: 100px;
 }
 
 .input-bar {
   display: flex;
-  padding-top: 10px;
+  padding-top: 20px;
+}
+
+.input-bar a{
+  text-decoration: none;
 }
 
 input {
@@ -125,9 +157,8 @@ input {
   color: #595858;
   background-color: white;
   padding: 20px;
-  border: none;
   border-radius: 5px 0 0 5px;
-
+  border: none;
 }
 
 input[type=submit] {
@@ -147,43 +178,62 @@ iframe {
   justify-content: center;
   background-color: white;
   color: #595858;
-  padding: 20px 160px;
+  padding: 20px 160px 10px 160px;
 }
 
 .quote {
   text-align: center;
-  margin: 0 100px;
+  margin: 0 120px;
   padding-top: 10px;
+}
+
+.name {
+  margin-top: 5px;
 }
 
 .photo-bar {
   display: flex;
-  
+  padding: 10px 0px;
 }
 
 .photo {
   padding: 3px;
 }
 
-.contact-header {
-  margin-bottom: 0;
+.face {
+  width: 40px;
+  height: 40px;
 }
 
-.content-text {
-  margin-top: 0;
+.contact-header {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.contact-text {
+  margin: 0;
+  padding: 10px;
 }
 
 .social-icons {
   display: flex;
   flex-direction: horizontal;
+  padding-top: 10px;
+}
+
+.social-icons a{
+  text-decoration: none;
 }
 
 .social-icon {
-  padding: 5px;
+  padding: 7px;
+}
+
+.social-icon:hover {
+  color: #4448BA;
 }
 
 .footer {
-  color: white;
   opacity: 1;
   background-color: #4448BA;
   justify-content: center;
@@ -194,8 +244,15 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: white;
 }
 
 .quick-link {
-  padding: 10px;
+  padding: 12px;
 }
